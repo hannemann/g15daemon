@@ -2,7 +2,7 @@
 /* config.h.in.  Generated from configure.in by autoheader.  */
 
 /* Date of compilation */
-#define BUILD_DATE "Wed 13 Jan 2021 00:35:43"
+#define BUILD_DATE "Wed 13 Jan 2021 08:06:14"
 
 /* Build OS Particulars */
 #define BUILD_OS_NAME "Linux 5.10.6-110-tkg-upds x86_64"
@@ -56,7 +56,7 @@
 #define HAVE_LINUX_UINPUT_H 1
 
 /* Define to 1 if you have the <memory.h> header file. */
-#define HAVE_MEMORY_H 1
+/* #undef HAVE_MEMORY_H */
 
 /* Define to 1 if you have the `memset' function. */
 #define HAVE_MEMSET 1
@@ -125,19 +125,19 @@
 #define PACKAGE "g15daemon"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "mlampard@users.sf.net"
+#define PACKAGE_BUGREPORT "menelkir@itroll.org"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "g15daemon"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "g15daemon 1.9.5.3"
+#define PACKAGE_STRING "g15daemon 1.9.5.4"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "g15daemon"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.9.5.3"
+#define PACKAGE_VERSION "1.9.5.4"
 
 /* Define to the type of arg 1 for `select'. */
 #define SELECT_TYPE_ARG1 int
@@ -152,7 +152,7 @@
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "1.9.5.3"
+#define VERSION "1.9.5.4"
 
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */
