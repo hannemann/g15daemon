@@ -38,6 +38,7 @@
 #include <unistd.h>
 #include <pwd.h>
 #include <ctype.h>
+#include <sigaction.h>
 
 #include <config.h>
 #include <libg15.h>
