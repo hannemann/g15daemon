@@ -38,7 +38,7 @@
 
 #include <config.h>
 
-#ifdef (OS_FREEBSD)
+#ifdef OS_FREEBSD
 #include <signal.h>
 #include <netinet/in.h>
 #endif

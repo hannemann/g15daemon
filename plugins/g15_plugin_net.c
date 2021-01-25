@@ -36,7 +36,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#ifdef (OS_FREEBSD)
+#ifdef OS_FREEBSD
 #include <netinet/in.h>
 #endif
 
