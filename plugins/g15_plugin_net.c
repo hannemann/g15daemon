@@ -36,6 +36,10 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
+#ifdef __FreeBSD__
+#include <netinet/in.h>
+#endif
+
 #include <errno.h>
 #include <libg15.h>
 #include <g15daemon.h>

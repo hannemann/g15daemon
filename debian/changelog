@@ -1,3 +1,10 @@
+g15daemon 1.9.5.5 buster; urgency=low
+ * Fixed build for FreeBSD
+
+g15daemon 1.9.5.4 buster; urgency=low
+ * Fork
+ * Most Gentoo and Arch Linux patches applied
+
 g15daemon 1.9.5.3 edgy; urgency=low
  * BugFix: plugins/g15daemon_net.c: ensure that OOB traffic is not mixed with
            normal image buffers.

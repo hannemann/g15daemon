@@ -176,3 +176,5 @@ allow clients use of all 'L' keys.
 1.9.5.4
 - Bump: Fork and bump version
 - BugFix: Most Gentoo and Arch patches applied
+1.9.5.5
+- Adequate files for FreeBSD build properly

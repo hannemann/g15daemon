@@ -38,6 +38,11 @@
 
 #include <config.h>
 
+#ifdef __FreeBSD__
+#include <signal.h>
+#include <netinet/in.h>
+#endif
+
 #include <libg15.h>
 #include "g15daemon_client.h" 
 
