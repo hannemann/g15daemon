@@ -35,7 +35,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdio.h>
-
+#include <signal.h>
 #include <config.h>
 
 #ifdef __FreeBSD__
