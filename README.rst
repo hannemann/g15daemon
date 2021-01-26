@@ -75,8 +75,14 @@ Options
 -d			Debug Mode - Stay in foreground and output all debug messages to STDERR
 -v			show version
 -l			Set default LCD backlight level
---set-backlight		Sets backlight individually for currently shown screen.
-				Default is to set backlight globally (keyboard default).
+--set-backlight				Sets backlight individually for currently shown screen. Default is to set backlight globally (keyboard default).
+
+=======
+FreeBSD
+=======
+
+Works on FreeBSD. Port are provided (until accepted by ports management)
+G-Keys doesn't work right now, LCD works without a problem. Tested with FreeBSD 12.2.
 
 =============
 How to donate
