@@ -67,15 +67,24 @@ will do this, if it's placed (for instance) in kde's Autostart folder.
 =======
 Options
 =======
-
--k			Kill a previous incarnation
--K			Turn off the keyboard backlight on the way out
--h			Shows this help
--s			Changes the screen-switch key from L1 to MR (beware)
--d			Debug Mode - Stay in foreground and output all debug messages to STDERR
--v			show version
--l			Set default LCD backlight level
---set-backlight				Sets backlight individually for currently shown screen. Default is to set backlight globally (keyboard default).
++------------------+---------------------------------------------------------------------------------+
+| -k               | Kill a previous incarnation                                                     |
++------------------+---------------------------------------------------------------------------------+
+| -K               | Turn off the keyboard backlight on the way out                                  |
++------------------+---------------------------------------------------------------------------------+
+| -h               | Shows this help                                                                 |
++------------------+---------------------------------------------------------------------------------+
+| -s               | Changes the screen-switch key from L1 to MR (may cause issues)                  |
++------------------+---------------------------------------------------------------------------------+
+| -d               | Debug Mode - Stay in foreground and output all debug messages to STDERR         |
++------------------+---------------------------------------------------------------------------------+
+| -v               | Show version                                                                    |
++------------------+---------------------------------------------------------------------------------+
+| -l               | Set default LCD backlight level                                                 |
++------------------+---------------------------------------------------------------------------------+
+| --set-backlight  | Sets backlight individually for currently shown screen.                         |
+|                  | Default is to set backlight globally (keyboard default).                        |
++------------------+---------------------------------------------------------------------------------+
 
 =======
 FreeBSD
