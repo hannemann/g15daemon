@@ -2,10 +2,10 @@
 /* config.h.in.  Generated from configure.in by autoheader.  */
 
 /* Date of compilation */
-#define BUILD_DATE "Wed 13 Jan 2021 08:06:14"
+#define BUILD_DATE "Tue 23 Feb 2021 06:56:47"
 
 /* Build OS Particulars */
-#define BUILD_OS_NAME "Linux 5.10.6-110-tkg-upds x86_64"
+#define BUILD_OS_NAME "Linux 5.10.16-arch1-1 x86_64"
 
 /* Compiler Version */
 #define COMPILER_VERSION "gcc version 10.2.0 (GCC) "
@@ -131,13 +131,13 @@
 #define PACKAGE_NAME "g15daemon"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "g15daemon 1.9.5.4"
+#define PACKAGE_STRING "g15daemon 1.9.5.6"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "g15daemon"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.9.5.4"
+#define PACKAGE_VERSION "1.9.5.6"
 
 /* Define to the type of arg 1 for `select'. */
 #define SELECT_TYPE_ARG1 int
@@ -152,7 +152,7 @@
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "1.9.5.4"
+#define VERSION "1.9.5.6"
 
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */

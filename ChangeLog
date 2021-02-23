@@ -178,3 +178,5 @@ allow clients use of all 'L' keys.
 - BugFix: Most Gentoo and Arch patches applied
 1.9.5.5
 - Adequate files for FreeBSD build properly
+1.9.5.6
+- Reorganized contrib directory, fixed some typos and added some stuff
