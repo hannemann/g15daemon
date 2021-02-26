@@ -1,0 +1,23 @@
+# Template file for 'g15daemon'
+pkgname=g15daemon
+version=1.9.5.6
+revision=1
+wrksrc="g15daemon-${version}"
+short_desc="A daemon that makes it possible to use the G-Buttons and draw on the G15 LCD"
+maintainer="Daniel Menelkir <menelkir@itroll.org>
+license="GPL"
+homepage="https://gitlab.com/menelkir/g15daemon"
+distfiles="https://gitlab.com/menelkir/g15daemon/-/archive/${version}/g15daemon-${version}.tar.b2"
+checksum=c75b60869beb47aad76b1456cf4a93e9a276d985fe9ff8a79ffa63afc553e605
+nocross=yes
+
+configure() {
+  CFLAGS+=' -fcommon' # https://wiki.gentoo.org/wiki/Gcc_10_porting_notes/fno_common
+  ./configure --prefix=/usr --sbindir=/usr/bin --disable-static
+}
+
+post_install() {
+	mkdir "${PKGDESTDIR}/etc/sv/g15daemon"
+	vcopy contrib/init/g15daemon.run "${PKGDESTDIR}/etc/sv/g15daemon/run"
+	chmod 755 "${PKGDESTDIR}/etc/sv/g15daemon/run"
+}
