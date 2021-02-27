@@ -84,7 +84,7 @@ case $host_os in
 	  ;;
 	*freebsd*)
 	  AC_DEFINE([OSTYPE_FREEBSD], [1],[Target OS is FreeBSD])
-	  AS_MSG_NOTICE([OS is FreeBSD, using uinput if available])
+	  AC_MSG_NOTICE([OS is FreeBSD, using uinput if available])
 	  uinput=true
 	  ;;
 	*darwin*)
