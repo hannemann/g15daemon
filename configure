@@ -20571,7 +20571,7 @@ printf "%s\n" "$as_me: OS is Linux, using uinput if available" >&6;}
 printf "%s\n" "#define OSTYPE_FREEBSD 1" >>confdefs.h
 
 	  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: OS is FreeBSD, using uinput if available" >&5
-print "%s\n" "as_me: OS is FreeBSD, using uinput if available" >&6;}
+printf "%s\n" "as_me: OS is FreeBSD, using uinput if available" >&6;}
 	 ;;
 	*darwin*)
 
