@@ -48,28 +48,17 @@ Currently,this means the G15 Keyboard(s), the G11 Keyboard and Z10
 Speakers.
 
 
-Q5.	Are there any forums supporting the G15Tools?
+Q5.	Why doesn't G15Daemon use DBUS or DCOP?
 
 Answer:
 
-Yes. There are several.  G15Tools now has it's own site, including
-forums, at www.g15tools.com.There are also forums on the g15daemon
-project site: http://sourceforge.net/projects/g15daemon, and a few
-Linux distributions have threads setup for G15Tools users.
+DBUS is a nice but we want to keep dependancies to the minimum, 
+and using DBUS would mean we have to ensure that G15Daemon is loaded  
+after the DBUS server, which is something we can't guarantee. Down  
+the track we will look at providing a DBUS G15Daemon proxy.
 
 
-Q6.	Why doesn't G15Daemon use DBUS or DCOP?
-
-Answer:
-
-DBUS is a nice thing, however it's very new and is not  available 
-everywhere. We try to keep dependancies to the minimum, and using 
-DBUS would mean we have to ensure that G15Daemon is loaded  after
-the DBUS server, which is something we can't guarantee. Down  the
-track we will look at providing a DBUS G15Daemon proxy.
-
-
-Q7.	Is G15Daemon able to run on my operating system?
+Q6.	Is G15Daemon able to run on my operating system?
 
 Answer:
 
@@ -77,12 +66,11 @@ G15Daemon  currently has  support  for Linux, MacOSX and Solaris.
 Some Linux  distributions  include the  G15Tools in their package
 managers, however those may not be up-to-date.
 
-FreeBSD  support is possible, see  README.FreeBSD  for details on
-how you can try it out.  FreeBSD  support is completely untested,
-however it may work.  Please  let us know  if  it works  for you.
+FreeBSD is supported and it's a WIP. It's still a bit flacky. LCD
+works as expected, I still have some issues with the G-Keys and
+multimedia keys.
 
-
-Q8.	Will G15Daemon ever run on Windows?
+Q7.	Will G15Daemon ever run on Windows?
 
 Answer:
 
