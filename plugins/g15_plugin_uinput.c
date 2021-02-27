@@ -335,6 +335,6 @@ static int keyevents(plugin_event_t *myevent) {
     /* if no exitfunc or eventhandler, member should be NULL */
 plugin_info_t g15plugin_info[] = {
         /* TYPE, name, initfunc, updatefreq, exitfunc, eventhandler, initfunc */
-   {G15_PLUGIN_CORE_OS_KB, "Linux UINPUT Keyboard Output"	, NULL, 500, (void*)g15_exit_uinput, (void*)keyevents, (void*)g15_init_uinput},
+   {G15_PLUGIN_CORE_OS_KB, "UINPUT Keyboard Output"		, NULL, 500, (void*)g15_exit_uinput, (void*)keyevents, (void*)g15_init_uinput},
    {G15_PLUGIN_NONE,               ""          			, NULL,   0,   			NULL,            NULL,           NULL}
 };

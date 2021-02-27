@@ -114,6 +114,9 @@
 /* Target OS is Linux */
 #undef OSTYPE_LINUX
 
+/* Target OS is FreeBSD */
+#undef OSTYPE_FREEBSD
+
 /* Target OS is unknown */
 #undef OSTYPE_OTHER
 

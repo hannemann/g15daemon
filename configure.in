@@ -4,7 +4,7 @@
 
 
 AC_PREREQ(2.59)
-AC_INIT(g15daemon, [1.9.5.6], [menelkir@itroll.org])
+AC_INIT(g15daemon, [1.9.5.7], [menelkir@itroll.org])
 AC_PREFIX_DEFAULT(/usr)
 AC_CONFIG_AUX_DIR(config)
 AC_CANONICAL_HOST()
@@ -81,6 +81,11 @@ case $host_os in
 	*linux*) 
 	  AC_DEFINE([OSTYPE_LINUX], [1],[Target OS is Linux])
 	  AC_MSG_NOTICE([OS is Linux, using uinput if available])
+	  ;;
+	*freebsd*)
+	  AC_DEFINE([OSTYPE_FREEBSD], [1],[Target OS is FreeBSD])
+	  AS_MSG_NOTICE([OS is FreeBSD, using uinput if available])
+	  uinput=true
 	  ;;
 	*darwin*)
 	  AC_DEFINE([OSTYPE_DARWIN], [1],[Target OS is Darwin])

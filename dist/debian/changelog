@@ -1,3 +1,6 @@
+g15daemon 1.9.5.7 buster; urgency=low
+ * FreeBSD bug fixes
+
 g15daemon 1.9.5.6 buster; urgency=low
  * Fixed some typos
  * Reorganize contrib stuff

@@ -115,6 +115,9 @@
 /* Target OS is Linux */
 #define OSTYPE_LINUX 1
 
+/* Target OS is FreeBSD */
+/* #undef OSTYPE_FREEBSD */
+
 /* Target OS is unknown */
 /* #undef OSTYPE_OTHER */
 
@@ -131,13 +134,13 @@
 #define PACKAGE_NAME "g15daemon"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "g15daemon 1.9.5.6"
+#define PACKAGE_STRING "g15daemon 1.9.5.7"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "g15daemon"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.9.5.6"
+#define PACKAGE_VERSION "1.9.5.7"
 
 /* Define to the type of arg 1 for `select'. */
 #define SELECT_TYPE_ARG1 int
@@ -152,7 +155,7 @@
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "1.9.5.6"
+#define VERSION "1.9.5.7"
 
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */
