@@ -22,3 +22,5 @@ use the 'screen' they previously created, as long as they return within the
 etc to periodically update.
 
 - Add DBUS proxy.
+
+- Multimedia keys doesn't with FreeBSD, and g15daemon doesn't "talk" with with iichid either
