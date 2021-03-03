@@ -1,7 +1,7 @@
 LLIBDIR=@LIBDIR@
 
 SUBDIRS =  libg15daemon_client g15daemon plugins
-AM_CLAGS =  -I$(top_srcdir)/libg15daemon_client -I$(top_srcdir)/g15daemon
+AM_CFLAGS =  -I$(top_srcdir)/libg15daemon_client -I$(top_srcdir)/g15daemon
 
 EXTRA_DIST = contrib Documentation README.usage FAQ LICENSE images README.Linux README.FreeBSD README.Solaris
 

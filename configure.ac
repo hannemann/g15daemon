@@ -13,9 +13,6 @@ AM_INIT_AUTOMAKE()
 AC_CONFIG_HEADERS([config.h])
 
 _LT_SET_OPTION([LT_INIT],[dlopen])
-m4_warn([obsolete],[AC_LIBTOOL_DLOPEN: Remove this warning and the call to _LT_SET_OPTION when you
-put the 'dlopen' option into LT_INIT's first parameter.])
-
 
 # Checks for programs.
 AC_PROG_CC
