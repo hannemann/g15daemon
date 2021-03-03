@@ -2,26 +2,28 @@
 # Process this file with autoconf to produce a configure script.
 # $Revision: 458 $ -  $Date: 2008-01-31 15:48:40 +1030 (Thu, 31 Jan 2008) $ $Author: mlampard $
 
-
-AC_PREREQ(2.59)
-AC_INIT(g15daemon, [1.9.5.7], [menelkir@itroll.org])
+AC_PREREQ([2.71])
+AC_INIT([g15daemon],[3.0],[menelkir@itroll.org])
 AC_PREFIX_DEFAULT(/usr)
 AC_CONFIG_AUX_DIR(config)
 AC_CANONICAL_HOST()
 AC_CANONICAL_TARGET()
 
 AM_INIT_AUTOMAKE()
-AC_CONFIG_HEADER([config.h])
+AC_CONFIG_HEADERS([config.h])
 
-AC_LIBTOOL_DLOPEN
+_LT_SET_OPTION([LT_INIT],[dlopen])
+m4_warn([obsolete],[AC_LIBTOOL_DLOPEN: Remove this warning and the call to _LT_SET_OPTION when you
+put the 'dlopen' option into LT_INIT's first parameter.])
+
 
 # Checks for programs.
 AC_PROG_CC
-AC_PROG_LIBTOOL
+LT_INIT
 
 # Checks for libraries.
 AC_CHECK_LIB([g15], [initLibG15],,AC_MSG_ERROR(["libg15 (or its devel package) not found. please install it"]))
-AC_CHECK_LIB([g15render], [g15r_loadWbmpSplash],,AC_MSG_ERROR([">=libg15render-1.2 (or its devel package) not found.  please install it"]))
+AC_CHECK_LIB([g15render], [g15r_loadWbmpSplash],,AC_MSG_ERROR([">=libg15render-3.0 (or its devel package) not found.  please install it"]))
 AC_CHECK_LIB([m], [sin])
 AC_CHECK_LIB([pthread], [pthread_mutex_init])
 
@@ -39,7 +41,9 @@ AC_FUNC_STRFTIME
 AC_CHECK_FUNCS([memset select socket strerror backtrace backtrace_symbols])
 
 # Checks for header files.
-AC_HEADER_STDC
+AC_CHECK_INCLUDES_DEFAULT
+AC_PROG_EGREP
+
 AC_HEADER_SYS_WAIT
 AC_CHECK_HEADERS([ linux/input.h ])
 AC_CHECK_HEADERS([ execinfo.h ])

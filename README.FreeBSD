@@ -26,5 +26,6 @@ If not already enabled:
 	Enable ugen
 
    Recompile the kernel and reboot.
+   From FreeBSD 12.2 (tested 12.2 and 13-BETA3) you don't need to recompile the kernel.
 
 NetBSD and OpenBSD are not supported at this time due to libusb deficiencies on those platforms.

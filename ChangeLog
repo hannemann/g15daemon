@@ -182,3 +182,5 @@ allow clients use of all 'L' keys.
 - Reorganized contrib directory, fixed some typos and added some stuff
 1.9.5.7
 - FreeBSD: making G-keys working again.
+3.0
+- Code revamped. Bumped to a higher version number to clean things up
