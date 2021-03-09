@@ -45,3 +45,4 @@ keycode 246 = XF86iTouch
 keycode 247 = XF86Launch3
 keycode 249 = XF86ToDoList
 keycode 251 = XF86Calculater
+keycode 78 = Scroll_Lock
