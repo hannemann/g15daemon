@@ -20,4 +20,4 @@ keycode 193 = F31
 keycode 194 = F32
 keycode 195 = F33
 keycode 196 = F34
-keycode 78 = Scroll_Lock
+add mod3 = Scroll_Lock

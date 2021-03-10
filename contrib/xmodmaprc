@@ -44,5 +44,5 @@ keycode 237 = XF86AudioMedia
 keycode 246 = XF86iTouch
 keycode 247 = XF86Launch3
 keycode 249 = XF86ToDoList
-keycode 251 = XF86Calculater
-keycode 78 = Scroll_Lock
+keycode 251 = XF86Calculator
+add mod3 = Scroll_Lock
