@@ -2,8 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 # $Revision: 458 $ -  $Date: 2008-01-31 15:48:40 +1030 (Thu, 31 Jan 2008) $ $Author: mlampard $
 
-AC_PREREQ([2.71])
-AC_INIT([g15daemon],[3.0],[menelkir@itroll.org])
+AC_INIT([g15daemon],[3.0.1],[menelkir@itroll.org])
 AC_PREFIX_DEFAULT(/usr)
 AC_CONFIG_AUX_DIR(config)
 AC_CANONICAL_HOST()
