@@ -1,6 +1,8 @@
-$Revision: 378 $ 
-$Date: 2021-03-09 08:19:20 +0300 (Tue, 09 Mar 2021) $
+$Revision: 379 $ 
+$Date: 2021-03-19 23:00:20 +0300 (Tue, 09 Mar 2021) $
 $Author: menelkir $
+
+Update: For now one, FreeBSD will remain untested and unsupported.
 
 This has being tested with versions 12.1, 12.2 and 13.
 
