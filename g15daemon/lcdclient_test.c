@@ -52,9 +52,10 @@ int main(int argc, char *argv[])
     if((g15screen_fd = new_g15_screen(G15_PIXELBUF))<0){
         printf("Sorry, cant connect to the G15daemon\n");
         return 5;
-    }else
+    }
+    else {
         printf("Connected to g15daemon.  sending image\n");
-
+    }
         if(argc<2)
             retval = g15_send(g15screen_fd,(char*)logo_data,6880);
         else {
@@ -86,7 +87,7 @@ recv(g15screen_fd, &keystate, 4, 0);
                 retval = g15_send_cmd (g15screen_fd, G15DAEMON_BACKLIGHT, G15_BRIGHTNESS_MEDIUM);
                 unsigned char packet[2];
                 packet[0] = G15DAEMON_BACKLIGHT|G15_BRIGHTNESS_MEDIUM;
-                printf("sent %i bytes\n",send(g15screen_fd, packet, 1, MSG_OOB ));
+                printf("sent %li bytes\n",send(g15screen_fd, packet, 1, MSG_OOB ));
 
             }
             if(keystate & G15_KEY_G4){
