@@ -1,0 +1,14 @@
+[main]
+@type = classic, oneshot
+@name = g15daemon
+@description = "g15daemon"
+@depends = ()
+@options = ( log env )
+    
+[start]
+@build = auto,custom
+@execute = ( g15daemon )
+    
+[stop]
+@build = auto,custom
+@execute = ( g15daemon -k 
