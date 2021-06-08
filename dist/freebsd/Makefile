@@ -1,7 +1,5 @@
-# $FreeBSD$
-
 PORTNAME=	g15daemon
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.2
 CATEGORIES=	sysutils
 MASTER_SITES=	https://gitlab.com/menelkir/${PORTNAME}/-/archive/${PORTVERSION}/
 
@@ -19,6 +17,7 @@ USES=		compiler:gcc-c++11-lib gmake localbase libtool
 USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS+=	--sysconfdir=${LOCALBASE}/etc
 
 CFLAGS+=	-fcommon
 
