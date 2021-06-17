@@ -38,7 +38,7 @@ Using the LCD
 =============
 
 Patches are available for libgraphlcd, in the g15daemon patches subdirectory. You'll need a copy of graphlcd
-source, which is available from http://graphlcd.berlios.de. 
+source, which is available from http://graphlcd.berlios.de.
 The patches are against the current version, which is 1.3.
 
 To patch the graphlcd source, extract the graphlcd-base archive, then type:

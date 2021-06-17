@@ -2,9 +2,6 @@
 TODO list for G15daemon.  Not in any particular order.
 ********************************************************************************
 
-PARTIALLY DONE - Add manpage and other documentation for the client library and it's
-  bindings.
-
 - add a few simple template client examples in various languages
 
 - write a small client app to set configuration options on-the-fly (M-key
@@ -14,7 +11,7 @@ toggle, backlight, etc)
 interpreter for this)
 
 - Allow for clients to set a time-to-live for screens they create, which
-will allow the client app to exit without taking the screen with them. 
+will allow the client app to exit without taking the screen with them.
 
 - Clients using the above functionality ought to be able to re-connect and
 use the 'screen' they previously created, as long as they return within the
@@ -23,4 +20,3 @@ etc to periodically update.
 
 - Add DBUS proxy.
 
-- Multimedia keys doesn't with FreeBSD, and g15daemon doesn't "talk" with with iichid either
