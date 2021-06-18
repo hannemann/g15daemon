@@ -4,11 +4,11 @@
 @description = "g15daemon"
 @depends = ()
 @options = ( log env )
-    
+
 [start]
 @build = auto,custom
 @execute = ( g15daemon )
-    
+
 [stop]
 @build = auto,custom
-@execute = ( g15daemon -k 
+@execute = ( g15daemon -k
