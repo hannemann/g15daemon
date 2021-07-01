@@ -9758,13 +9758,6 @@ AC_REQUIRE_AUX_FILE([missing])dnl
 if test x"${MISSING+set}" != xset; then
   MISSING="\${SHELL} '$am_aux_dir/missing'"
 fi
-# Use eval to expand $SHELL
-if eval "$MISSING --is-lightweight"; then
-  am_missing_run="$MISSING "
-else
-  am_missing_run=
-  AC_MSG_WARN(['missing' script is too old or missing])
-fi
 ])
 
 # Helper functions for option handling.                     -*- Autoconf -*-
