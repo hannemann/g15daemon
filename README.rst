@@ -90,8 +90,11 @@ Options
 FreeBSD
 =======
 
-Works on FreeBSD. Port are provided (until accepted by ports management)
-G-Keys doesn't work right now, LCD works without a problem. Tested with FreeBSD 12.2.
+Port are provided (until accepted by commiters)
+G-Keys works a bit flaky (sometimes lags occurs and I don't know how to fix it)
+LCD works as expected.
+
+Tested with FreeBSD 12.1, 12.2 and 13.0.
 
 =============
 How to donate

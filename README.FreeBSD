@@ -1,20 +1,4 @@
-$Revision: 381 $
-$Date: 2021-06-17 20:31:20 +0300 (Thu, 17 Jun 2021) $
-$Author: menelkir $
-
-You need iichid for multimedia keys to work.
-Add to your /boot/loader.conf.local
-
-ig4_load="YES"
-iicbus_load="YES"
-iichid_load="YES"
-
-Version 12.x can be installed from sysutils/iichid, 13 and beyond have
-iichid incorporated into kernel.
-
-You also need to set evdev to deal with events instead of kbdmux
-so add this to your /boot/loader.conf.local too:
+You need to set evdev to deal with events instead of kbdmux
+so add this to your /boot/loader.conf.local:
 
 kern.evdev.rcpt_mask="12"
-
-NetBSD and OpenBSD are untested.
