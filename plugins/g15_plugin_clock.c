@@ -151,7 +151,7 @@ static int draw_digital(g15canvas *canvas){
 	}
 	if(buf[0]==49)
 		narrows=1;
-		len = strlen(buf);
+	len = strlen(buf);
 	if(buf[0]==' ')
 		len++;
 	if(narrows)
@@ -173,7 +173,7 @@ static int draw_digital(g15canvas *canvas){
 
 	if(ampm[0]!=0)
 		g15r_renderString (canvas,(unsigned char *)ampm,0,G15_TEXT_LARGE,totalwidth+15,height-6);
-		return G15_PLUGIN_OK;
+	return G15_PLUGIN_OK;
 }
 
 static int draw_analog(g15canvas *c){
@@ -228,7 +228,7 @@ static int draw_analog(g15canvas *c){
 	}
 	else
 		g15r_renderString(c, (unsigned char*)time, 0, G15_TEXT_LARGE, 60, 18);
-		return G15_PLUGIN_OK;
+	return G15_PLUGIN_OK;
 }
 
 static int lcdclock(lcd_t *lcd){

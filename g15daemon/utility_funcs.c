@@ -295,9 +295,9 @@ void uf_conf_free(g15daemon_t *list){
 					free(tmpitem->key);
 				if(tmpitem->value!=NULL)
 					free(tmpitem->value);
-					tmpitem=section->items->next;
+				tmpitem=section->items->next;
 					free(section->items);
-					section->items=tmpitem;
+				section->items=tmpitem;
 			}
 		}
 		tmpsection=section->next;
@@ -331,7 +331,7 @@ int uf_conf_write(g15daemon_t *list,char *filename){
 						snprintf(line,1024,"%s\n",item->key);
 					else
 						snprintf(line,1024,"%s: %s\n",item->key, item->value);
-						write(config_fd,line,strlen(line));
+					write(config_fd,line,strlen(line));
 					}
 					item=item->next;
 				}
@@ -374,7 +374,7 @@ config_section_t *g15daemon_cfg_load_section(g15daemon_t *masterlist,char *name)
 	config_section_t *new = NULL;
 	if((new=uf_search_confsection(masterlist,name))!=NULL)
 		return new;
-		new = g15daemon_xmalloc(sizeof(config_section_t));
+	new = g15daemon_xmalloc(sizeof(config_section_t));
 		new->head = new;
 		new->next = NULL;;
 		new->sectionname=strdup(name);
@@ -396,7 +396,7 @@ char * uf_remove_whitespace(char *str){
 		str=strdup(" ");
 	while(isspace(str[z])&&str[z])
 		z++;
-		str+=z;
+	str+=z;
 		return str;
 }
 
@@ -573,7 +573,7 @@ int uf_conf_open(g15daemon_t *list, char *filename) {
 		start=sect+i;
 		if(start[0]=='#'){
 			/* header - ignore
-			/* comments start with ; and can be produced like so:
+			 * comments start with ; and can be produced like so:
 			 * g15daemon_cfg_write_string(noload_cfg,"; Plugins in this section will not be loaded on start","");
 			 * the value parameter must not be used.
 			 */
@@ -616,7 +616,7 @@ int uf_screendump_pbm(unsigned char *buffer,char *filename) {
 			if(x%WIDTH==WIDTH-1)
 			fprintf(f,"\n");
 		}
-		fclose(f);
-		free(canvas);
+	fclose(f);
+	free(canvas);
 	return 0;
 }

@@ -245,7 +245,7 @@ static void *lcd_draw_thread(void *lcdlist){
 			setLCDContrast(displaying->contrast_state);
 			if(displaying->masterlist->remote_keyhandler_sock==0) // only allow mled control if the macro recorder isnt running
 				setLEDs(displaying->mkey_state);
-				pthread_mutex_unlock(&g15lib_mutex);
+			pthread_mutex_unlock(&g15lib_mutex);
 				displaying->state_changed = 0;
 		}
 		pthread_mutex_unlock(&lcdlist_mutex);
@@ -385,7 +385,7 @@ int main (int argc, char *argv[]) {
 		fprintf(stderr, "G15Daemon CMDLINE ARGS: ");
 		for(i=1;i<argc;i++)
 			fprintf(stderr, "%s ",argv[i]);
-			fprintf(stderr,"\n");
+		fprintf(stderr,"\n");
 	}
 	if(uf_return_running()>=0) {
 		g15daemon_log(LOG_ERR,"G15Daemon already running.. Exiting");

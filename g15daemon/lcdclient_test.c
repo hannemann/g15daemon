@@ -60,7 +60,7 @@ int main(int argc, char *argv[]){
 	printf("checking key status - press G1 to exit\n");
 	while(1){
 		keystate = 0;
-		int foo = 0;
+//		static int foo = 0;
 //		keystate = g15_send_cmd (g15screen_fd, G15DAEMON_GET_KEYSTATE, foo);
 //	while(1){
 	recv(g15screen_fd, &keystate, 4, 0);

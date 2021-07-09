@@ -310,7 +310,7 @@ static void *lcd_client_thread(void *display) {
 exitthread:
 	if(client_lcd->masterlist->remote_keyhandler_sock==client_sock)
 		client_lcd->masterlist->remote_keyhandler_sock=0;
-		close(client_sock);
+	close(client_sock);
 		free(tmpbuf);
 		g15daemon_lcdnode_remove(display);
 		pthread_exit(NULL);
