@@ -196,7 +196,7 @@ struct lcdnode_s {
 	lcdnode_t *last_priority;
 	lcd_t *lcd;
 }
-lcdnode_s;
+static lcdnode_s;
 
 struct g15daemon_s {
 	lcdnode_t *head;
@@ -209,10 +209,10 @@ struct g15daemon_s {
 	unsigned int kb_backlight_state; // master state
 	unsigned int remote_keyhandler_sock;
 }
-g15daemon_s;
+static g15daemon_s;
 
-pthread_mutex_t lcdlist_mutex;
-pthread_mutex_t g15lib_mutex;
+static pthread_mutex_t lcdlist_mutex;
+static pthread_mutex_t g15lib_mutex;
 
 /* server hello */
 #define SERV_HELO "G15 daemon HELLO"
