@@ -1,6 +1,6 @@
 # Template file for 'g15daemon'
 pkgname=g15daemon
-version=1.9.5.6
+version=3.0.4
 revision=1
 wrksrc="g15daemon-${version}"
 short_desc="A daemon that makes it possible to use the G-Buttons and draw on the G15 LCD"

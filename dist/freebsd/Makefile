@@ -12,7 +12,7 @@ LIB_DEPENDS+=	libg15.so:sysutils/libg15 \
 		libg15render.so:sysutils/libg15render \
 		libinput.so:x11/libinput
 
-USES=		compiler:gcc-c++11-lib gmake localbase libtool
+USES=		gmake localbase libtool
 
 USE_LDCONFIG=	yes
 

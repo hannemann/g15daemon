@@ -1,9 +1,9 @@
+g15daemon 3.0.2 buster; urgency=low
+ * BugFix: Updated config.guess and config.sub. Thanks  Nicolas F. (@CounterPillow)
+
 g15daemon 3.0.1 buster; urgency=low
  * BugFix: Removed AC PREREQ
  * Documentation: Changed some information in READMEs
-
-g15daemon 3.0.2 buster; urgency=low
- * BugFix: Updated config.guess and config.sub. Thanks  Nicolas F. (@CounterPillow)
 
 g15daemon 3.0 buster; urgency=low
  * Code revamp
