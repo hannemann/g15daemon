@@ -34,9 +34,6 @@ start_pre() {
 stop() {
 	ebegin "Stopping g15daemon"
 	local KILLOPT="-k"
-	if [ $BACKLIGHT_OFF = "yes" ]; then
-		KILLOPT="-K"
-	fi
 	while [ -f "${pidfile}" ] && kill -0 $(cat ${pidfile}) ; do
 		${command} ${KILLOPT}
 		sleep 1
