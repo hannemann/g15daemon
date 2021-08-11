@@ -87,14 +87,15 @@ int g15daemon_send_event(void *caller, unsigned int event, unsigned long value){
 					displaying->backlight_state++;
 					displaying->backlight_state %= 3; // limit to 0-2 inclusive
 				}
-				if(value & G15_KEY_M1 && value & G15_KEY_M3) {
-					static int scr_num=0;
-					char filename[128];
-					lcd_t *displaying = lcd->masterlist->current->lcd;
-					sprintf(filename,"/tmp/g15daemon-sc-%i.pbm",scr_num);
-					uf_screendump_pbm(displaying->buf,filename);
-					scr_num++;
+				if(value & G15_KEY_M1) {
+					setLEDs(G15_LED_M1);
 				}
+				if(value & G15_KEY_M2) {
+					setLEDs(G15_LED_M2);
+				}
+				if(value & G15_KEY_M3) {
+                    setLEDs(G15_LED_M3);
+                }
 				free(newevent);
 			}
 			else{
