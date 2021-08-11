@@ -244,10 +244,10 @@ static void *lcd_draw_thread(void *lcdlist){
 			pthread_mutex_lock(&g15lib_mutex);
 			setLCDContrast(displaying->contrast_state);
 			setLEDs(displaying->mkey_state);
-	/*		if(displaying->masterlist->remote_keyhandler_sock==0) // only allow mled control if the macro recorder isnt running 
-				setLEDs(displaying->mkey_state); */ 
+			if(displaying->masterlist->remote_keyhandler_sock==0) // only allow mled control if the macro recorder isnt running 
+				setLEDs(displaying->mkey_state);  
 			pthread_mutex_unlock(&g15lib_mutex);
-//				displaying->state_changed = 0; 
+				displaying->state_changed = 0; 
 		}
 		pthread_mutex_unlock(&lcdlist_mutex);
 	}
