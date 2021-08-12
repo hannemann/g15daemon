@@ -54,6 +54,9 @@ static unsigned int set_backlight = 0;
 struct lcd_t *keyhandler = NULL;
 static int loaded_plugins = 0;
 
+/* Turn M1 led one, to mirror the official driver behavior */
+setLEDs(G15_LED_M1);
+
 /* send event to foreground client's eventlistener */
 int g15daemon_send_event(void *caller, unsigned int event, unsigned long value){
 	switch(event) {
