@@ -11,4 +11,4 @@
 
 [stop]
 @build = auto,custom
-@execute = ( g15daemon -k
+@execute = ( g15daemon -k )
