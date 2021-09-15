@@ -5,11 +5,11 @@
 case $1 in
         start)
                 msg "Starting g15daemon..."
-                start_daemon /usr/bin/g15daemon
+                start_daemon /usr/sbin/g15daemon
                 ;;
         stop)
                 msg "Stopping g15daemon..."
-                stop_daemon /usr/bin/g15daemon
+                stop_daemon /usr/sbin/g15daemon
                 ;;
         restart)
                 $0 stop
@@ -17,7 +17,7 @@ case $1 in
                 $0 start
                 ;;
         status)
-                status_daemon /usr/bin/g15daemon
+                status_daemon /usr/sbin/g15daemon
                 ;;
         *)
                 echo "usage: $0 [start|stop|restart|status]"
