@@ -5,6 +5,7 @@
 case $1 in
         start)
                 msg "Starting g15daemon..."
+                modprobe uinput
                 start_daemon /usr/sbin/g15daemon
                 ;;
         stop)
