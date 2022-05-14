@@ -3,7 +3,7 @@ PORTVERSION=	3.0.2
 CATEGORIES=	sysutils
 MASTER_SITES=	https://gitlab.com/menelkir/${PORTNAME}/-/archive/${PORTVERSION}/
 
-MAINTAINER=	menelkir@itroll.org
+MAINTAINER=	dmenelkir@gmail.com
 COMMENT=	Daemon for use the G-Buttons and draw on the G15 LCD
 
 LICENSE=	GPLv2

@@ -11,7 +11,7 @@ Source: https://gitlab.com/menelkir/g15daemon/-/archive/v1.9.5.4/g15daemon-v1.9.
 URL: http://gitlab.com/menelkir/g15daemon
 Distribution: Linux
 Vendor: NONE
-Packager: Daniel Menelkir <menelkir@itroll.org>
+Packager: Daniel Menelkir <dmenelkir@gmail.com>
 Buildroot: /var/tmp/g15daemon-%{PACKAGE_VERSION}-root
 Requires: libg15
 Provides: g15daemon
