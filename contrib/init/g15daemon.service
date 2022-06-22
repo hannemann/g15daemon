@@ -1,11 +1,13 @@
 [Unit]
 Description=Logitech G15 Support Daemon
 Documentation=man:g15daemon(1)
+After=sys-subsystem-usb-g15.device
+StopWhenUnneeded=true
 
 [Service]
 Type=forking
 PIDFile=/run/g15daemon.pid
-ExecStart=/usr/bin/g15daemon
+ExecStart=/usr/sbin/g15daemon
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=sys-subsystem-usb-g15.device

@@ -1,6 +1,2 @@
-# G15daemon udev rule to autostart g15daemon on connect
-# belongs in udev rules directory such as /etc/udev/rules.d/
-# and the script g15daemon-hotplug should be in /usr/bin and made
-# executable with chmod +x /usr/bin/g15daemon-hotplug
-
-SYSFS{../name}=="Logitech Logitech Gaming Keyboard", RUN+="/usr/bin/g15daemon-hotplug"
+# New hotplug service activation by Guilhem Lettron.
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c226", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/sys/subsystem/usb/g15"
