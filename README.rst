@@ -93,16 +93,3 @@ FreeBSD
 Port are provided (until accepted by commiters)
 G-Keys works a bit flaky (sometimes lags occurs and I don't know how to fix it)
 LCD works as expected.
-
-Tested with FreeBSD 12.1, 12.2 and 13.0.
-
-=============
-How to donate
-=============
-
-If you find this repo useful (don't forget to pay a visit to the related
-repos too), you can buy me a beer:
-
-:BTC: 3ECzX5UhcFSRv6gBBYLNBc7zGP9UA5Ppmn
-
-:ETH: 0x7E17Ac09Fa7e6F80284a75577B5c1cbaAD566C1c
