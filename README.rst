@@ -90,6 +90,5 @@ Options
 FreeBSD
 =======
 
-Port are provided (until accepted by commiters)
 G-Keys works a bit flaky (sometimes lags occurs and I don't know how to fix it)
 LCD works as expected.
